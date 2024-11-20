@@ -149,7 +149,7 @@ class _LocalGuideFormState extends State<LocalGuideForm> {
       daysAvailableForTours = '';
       seasonalAvailability = '' as List<String>;
       expertiseController.clear();
-      filePath = Null;
+      filePath = '';
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Submitted Successfully!")),
