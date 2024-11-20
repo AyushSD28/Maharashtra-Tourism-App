@@ -1,0 +1,87 @@
+name: maharashtra
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  carousel_slider: ^5.0.0
+  cloud_firestore: ^5.5.0
+  file_picker: ^8.1.3
+  firebase_auth: ^5.3.3
+  firebase_core: ^3.8.0
+  flutter:
+    sdk: flutter
+  flutter_rating_bar: ^4.0.1
+  flutter_slider_drawer: ^2.1.3
+  google_fonts: ^6.2.1
+  intl: ^0.19.0
+  page_transition: ^2.1.0
+  path: ^1.9.0
+  persistent_bottom_nav_bar: ^6.2.1
+  smooth_page_indicator: ^1.2.0+3
+  sqflite: ^2.4.1
+  time_picker_widget: ^1.0.0+10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fivestarsHotels.png
+    - assets/home.png
+    - assets/marathishow.png
+    - assets/rareFacts.png
+    - assets/trekBook.png
+    - assets/cocktail.png
+    - assets/back.jpg
+    - assets/page1.jpg
+    - assets/page2.jpeg
+    - assets/page3.jpeg
+    - assets/citadel.png
+    - assets/insta.png
+    - assets/twitter.png
+    - assets/linkedin.png
+    - assets/topback.jpg
+    - assets/
+    - assets/left-arrow.png
+    - assets/my.jpg
+    - assets/threater.jpg
+
+    - assets/mumbaicity.jpg
+    - assets/amravaticity.jpg
+    - assets/yavatmalimg.jpg
+    - assets/punecity.jpg
+    - assets/swaminarayan.jpg   
+    - assets/punecity1.jpg
+    - assets/swaminarayan2.jpg
+    - assets/swaminarayan4.jpg
+    - assets/swaminarayan3.jpg
+
+    - assets/punehotels/Hyattimg/Hyatthotel.jpg
+    - assets/punehotels/Hyattimg/Hyatt2.jpg
+    - assets/punehotels/Hyattimg/Hyatt3.jpg
+    - assets/punehotels/Hyattimg/Hyatt4.jpg
+    - assets/punehotels/Conradimg/conrad3.jpg
+    - assets/punehotels/Conradimg/conrad2.jpg
+    - assets/punehotels/jw 1.jpg
+    - assets/punehotels/ritz1.jpg
+    - assets/punehotels/Conradimg/conrad1.jpg
+
+    - assets/backgrounds/loginimg.jpg
+    - assets/backgrounds/loginimg2.jpeg
+    - assets/backgrounds/loginimg3.jpg
+    - assets/backgrounds/guide.jpg
+    - assets/backgrounds/congrats.jpeg
+    - assets/backgrounds/form1.jpg
+    - assets/backgrounds/form2.jpg
+    - assets/backgrounds/form3.jpg
+
+    - assets/treks/mountain.jpg
+    - assets/treks/forest.jpeg
+    - assets/treks/desert.jpg

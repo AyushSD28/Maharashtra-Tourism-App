@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430246812110",
+    "project_id": "tourismapp-341dc",
+    "storage_bucket": "tourismapp-341dc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430246812110:android:f56dd83a66873c69e1339f",
+        "android_client_info": {
+          "package_name": "com.example.maharashtra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc2HNFBFefsrVXU91-KIrlUD5Bgu8u-WI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
