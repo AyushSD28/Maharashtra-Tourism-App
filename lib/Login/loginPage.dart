@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:maharashtra/Home/homepage.dart';
+import 'package:maharashtra/Login/joinus.dart';
 import 'package:maharashtra/Login/signupPage.dart';
 import 'package:maharashtra/snackbar.dart';
 
@@ -173,6 +174,30 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ],
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 20.0,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const JoinUsPage()));
+                },
+                child: const Text(
+                  'JOIN US',
+                  style: TextStyle(
+                    color: Color.fromRGBO(216, 67, 21, 1),
+                    decoration: TextDecoration.underline,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                  ),
                 ),
               ),
             ),

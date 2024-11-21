@@ -16,22 +16,22 @@ class _OnboardingGuideState extends State<OnboardingGuide> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
-      appBar: AppBar(
-        actions: [
-          GestureDetector(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const HomePage()));
-              },
-              child: const Icon(Icons.dashboard)),
-        ],
-      ),
+      // appBar: AppBar(
+      //   actions: [
+      //     GestureDetector(
+      //         onTap: () {
+      //           Navigator.push(context,
+      //               MaterialPageRoute(builder: (context) => const HomePage()));
+      //         },
+      //         child: const Icon(Icons.dashboard)),
+      //   ],
+      // ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color.fromRGBO(192, 204, 197, 1),
-              Color.fromRGBO(119, 123, 125, 1)
+              Color.fromRGBO(235, 238, 236, 1),
+              Color.fromRGBO(190, 191, 192, 1)
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,

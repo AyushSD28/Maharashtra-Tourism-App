@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:maharashtra/Hotels/hotelbooking.dart';
+import 'package:maharashtra/Hotels/hotebooking1.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Hotel {

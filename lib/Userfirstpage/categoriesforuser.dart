@@ -101,7 +101,7 @@ class _OptionForUserState extends State<OptionForUser> {
                             color: Colors.grey.withOpacity(0.5),
                             spreadRadius: 5,
                             blurRadius: 7,
-                            offset: const Offset(0, 3),
+                            offset: Offset(0, 3),
                           ),
                         ],
                         borderRadius: BorderRadius.circular(15),
@@ -134,7 +134,7 @@ class _OptionForUserState extends State<OptionForUser> {
                                   ),
                                 ),
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 5,
                               ),
                               Padding(
@@ -183,12 +183,14 @@ class _OptionForUserState extends State<OptionForUser> {
                                   ],
                                 ),
                               ),
-                              const Text(
-                                "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
-                                style: TextStyle(
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w100,
-                                    fontSize: 10),
+                              Expanded(
+                                child: const Text(
+                                  "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+                                  style: TextStyle(
+                                      color: Colors.grey,
+                                      fontWeight: FontWeight.w100,
+                                      fontSize: 10),
+                                ),
                               ),
                             ],
                           ),

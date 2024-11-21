@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:maharashtra/Hotels/hotelbooking.dart';
-import 'package:maharashtra/Model%20classes/reviewmodel.dart';
+import 'package:maharashtra/Hotels/hotebooking1.dart';
+import 'package:maharashtra/Model%20classes/reviewmodel2.dart';
 import 'package:maharashtra/ratingstar.dart';
 import 'package:maharashtra/staricons.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:maharashtra/Home/navbar.dart';
 import 'package:maharashtra/Login/loginPage.dart';
+import 'package:maharashtra/Userfirstpage/categoriesforuser.dart';
 import 'package:maharashtra/profile/profile.dart';
 
 import '../FortClean/fortcleanHome.dart';
@@ -373,41 +374,50 @@ class _HomeState extends State<Home> {
                     children: [
                       //button 1 = luxury hotel
                       Expanded(
-                        child: Container(
-                          height: 85,
-                          width: 187,
-                          decoration: BoxDecoration(
-                              color: const Color.fromRGBO(248, 248, 248, 1),
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Color.fromRGBO(134, 134, 134, 0.498),
-                                  blurRadius: 10,
-                                  spreadRadius: 01,
-                                  offset: Offset(0, 5),
-                                ),
-                              ]),
-                          child: Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Icon(
-                                  Icons.star_border_outlined,
-                                  // color: Colors.white,
-                                  weight: 50,
-                                  size: 30,
-                                ),
-                                Text(
-                                  "Luxury Hotels",
-                                  style: GoogleFonts.quicksand(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w900,
-                                    // color: Colors.white,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const OptionForUser()));
+                          },
+                          child: Container(
+                            height: 85,
+                            width: 187,
+                            decoration: BoxDecoration(
+                                color: const Color.fromRGBO(248, 248, 248, 1),
+                                borderRadius: BorderRadius.circular(20),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Color.fromRGBO(134, 134, 134, 0.498),
+                                    blurRadius: 10,
+                                    spreadRadius: 01,
+                                    offset: Offset(0, 5),
                                   ),
-                                )
-                              ],
+                                ]),
+                            child: Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Icon(
+                                    Icons.star_border_outlined,
+                                    // color: Colors.white,
+                                    weight: 50,
+                                    size: 30,
+                                  ),
+                                  Text(
+                                    "Luxury Hotels",
+                                    style: GoogleFonts.quicksand(
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w900,
+                                      // color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),

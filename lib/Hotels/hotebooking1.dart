@@ -1,5 +1,9 @@
+import 'dart:io';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class Hotelbooking extends StatefulWidget {
   const Hotelbooking({super.key});
@@ -30,10 +34,9 @@ class _HotelBookingState extends State<Hotelbooking> {
     return Scaffold(
       body: Column(
         children: [
-          // Header Section
           Stack(
             children: [
-              SizedBox(
+              Container(
                 height: 230,
                 width: double.infinity,
                 child: Image.asset(
@@ -65,7 +68,6 @@ class _HotelBookingState extends State<Hotelbooking> {
               )
             ],
           ),
-
           Expanded(
             child: Container(
               color: const Color.fromARGB(255, 249, 203, 65),
@@ -100,7 +102,6 @@ class _HotelBookingState extends State<Hotelbooking> {
                     ],
                   ),
                   const SizedBox(height: 20),
-                  // Children
                   _buildBottomSheetField(
                     controller: childrenController,
                     label: "Children",
@@ -118,7 +119,14 @@ class _HotelBookingState extends State<Hotelbooking> {
                   // Search Button
                   ElevatedButton(
                     onPressed: () {
-                      // Add search logic here
+                      CollectionReference collRef =
+                          FirebaseFirestore.instance.collection('hotelbooking');
+                      collRef.add({
+                        'checkindate': checkInController.text,
+                        'checkoutdate': checkOutController,
+                        'Noofadults': adultController.text,
+                        'Noofchildren': childrenController.text
+                      });
                     },
                     style: ElevatedButton.styleFrom(
                       minimumSize: const Size(double.infinity, 50),
